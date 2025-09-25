@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-lap: 1024px; /* 480px */
+}
