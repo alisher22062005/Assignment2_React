@@ -1,4 +1,4 @@
-import Experience2 from "../../../shared/Experience2";
+import Experience2 from "../../../shared/Cards/Experience2";
 import { Monitor, Smartphone, Globe } from "lucide-react";
 export default function ExperienceItems2() {
   const arr = [

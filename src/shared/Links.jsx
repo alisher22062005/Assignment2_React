@@ -1,5 +1,5 @@
 import { CodeXml, Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
-import PurpleButton from "../../../shared/Buttons/PuprleButton";
+import PurpleButton from "./Buttons/PuprleButton";
 export default function Links() {
   return (
     <>

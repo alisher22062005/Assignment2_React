@@ -1,6 +1,6 @@
 import { CodeXml } from "lucide-react";
-import PurpleButton from "../../../shared/Buttons/PuprleButton";
-import WhiteButton from "../../../shared/Buttons/WhiteButton";
+import PurpleButton from "./Buttons/PuprleButton";
+import WhiteButton from "./Buttons/WhiteButton";
 export default function Build() {
   return (
     <>

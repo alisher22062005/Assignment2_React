@@ -1,4 +1,4 @@
-import Experience from "../../../shared/Experience";
+import Experience from "../../../shared/Cards/Experience";
 import { Coffee, Users, TrendingUp } from "lucide-react";
 const arr = [
   { text: "Projects", number: "15+", image: Coffee },

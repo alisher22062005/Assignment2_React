@@ -1,6 +1,7 @@
 import { Sparkles, Menu } from "lucide-react";
-import PurpleButton from "./Buttons/PuprleButton";
+import { useNavigate } from "react-router-dom";
 export default function Header() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="flex p-[5%] bg-white w-full fixed top-0  justify-between border-b-[1px] border-b-gray-300  lap:p-[1%] lap:pl-[7%]  lap:justify-start ">
@@ -16,13 +17,24 @@ export default function Header() {
             Sharipov Alisher
           </div>
         </div>
-        <div className=" hidden text-[1rem] lap:flex justify-evenly flex-1  font-semibold text-gray-400 ">
-          <button className="hover:text-black">Home</button>
-          <button className="hover:text-black">About</button>
+        <div className=" hidden text-[1rem] lap:flex gap-[5%] flex-1  font-semibold text-gray-400 ">
+          <button onClick={() => navigate("/")} className="hover:text-black">
+            Home
+          </button>
+          <button
+            onClick={() => navigate("/news")}
+            className="hover:text-black"
+          >
+            News
+          </button>
           <button className="hover:text-black">Skills</button>
           <button className="hover:text-black">Projects</button>
           <button className="hover:text-black">Contacts</button>
-          {/* <PurpleButton text={"Get in touch"} width={"0%"} padding={"0.5rem"} /> */}
+          <button
+            className={` flex text-[0.9rem]  justify-center items-center p-[2%] rounded-[0.6rem] text-white font-semibold   bg-gradient-to-r from-blue-600 to-purple-600 lap:p-[1%] lap:w-[7rem] `}
+          >
+            Get in touch
+          </button>
         </div>
         <div className="lap:hidden">
           <Menu />
