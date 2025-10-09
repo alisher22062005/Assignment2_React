@@ -9,8 +9,8 @@ export default function ListNews() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    async function getData() {
-      await axios
+    function getData() {
+      axios
         .get(
           `https://api.nytimes.com/svc/topstories/v2/world.json?api-key=${API_Key}`
         )
