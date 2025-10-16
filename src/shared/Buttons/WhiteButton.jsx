@@ -1,11 +1,12 @@
-export default function WhiteButton({ text }) {
+export default function WhiteButton({ text, onClick }) {
   return (
     <>
-      <div
-        className={` flex text-[0.9rem] justify-center items-center  rounded-[0.6rem]  font-semibold   bg-white hover:bg-gray-100 p-[2%] lap:w-[14%] lap:p-[1%]`}
+      <button
+        onClick={onClick}
+        className={` flex text-[0.9rem] justify-center items-center  rounded-[0.6rem]  font-semibold border-[1px]  border-gray-200  bg-white hover:bg-gray-100 p-[2%]  lap:p-[1%]`}
       >
         {text}
-      </div>
+      </button>
     </>
   );
 }

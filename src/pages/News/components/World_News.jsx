@@ -17,6 +17,15 @@ export default function World_News() {
           breakthrough technologies to environmental initiatives and global
           economic trends.
         </div>
+        {/* <div className="w-full flex justify-center">
+          {" "}
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input border-gray-200 focus:outline-none text-[0.9rem] w-[60%] p-[1%] border-[1px] focus:!border-gray-200  rounded-[0.5rem]"
+          
+          />
+        </div> */}
       </div>
     </>
   );

@@ -1,11 +1,12 @@
-export default function PurpleButton({ text, width }) {
+export default function PurpleButton({ text, onClick }) {
   return (
     <>
-      <div
-        className={` flex text-[0.9rem]  justify-center items-center p-[2%] rounded-[0.6rem] text-white font-semibold   bg-gradient-to-r from-blue-600 to-purple-600 lap:p-[1%] lap:w-[14%] ${width}`}
+      <button
+        onClick={onClick}
+        className={` flex text-[0.9rem]  justify-center items-center  rounded-[0.6rem] text-white font-semibold p-[2%]   bg-gradient-to-r from-blue-600 to-purple-600 lap:p-[1%]   `}
       >
         {text}
-      </div>
+      </button>
     </>
   );
 }
